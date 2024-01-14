@@ -1,0 +1,27 @@
+{"request":"create model"}
+
+{"request":"query serial port"}         
+{"changed data":"serial port list","serial port list":["COM10","COM9","COM35"]}
+
+{"request":"open serial port","serial port":"COM10","baud rate":9600,"data bits":8,"stop bits":10,"parity":"odd"}       
+{"changed data":"serial port status","serial port":"COM10","baud rate":9600,"data bits":8,"stop bits":1,"parity":"odd","open":true}
+
+{"request":"send data","data to be sent":"adcd"}                 
+{"changed data":"data has been sent","send time":"202312241445","data has been sent":"abcd"}
+
+{"request":"start receiving data"}
+{"changed data":"data has been received","receive time":"202312241444","data has been received":"adbcd"}
+{"request":"stop receiving data"}
+
+{"request":"close serial port"}          
+{"changed data":"serial port status","serial port":"COM10","baud rate":9600,"data bits":8,"stop bits":1,"parity":"odd","open":false}
+
+{"changed data":"error","status":true,"code":5000,"source":"213123"}
+
+{"request":"destroy model"}
+
+{"request":"exit"}
+
+
+
+
